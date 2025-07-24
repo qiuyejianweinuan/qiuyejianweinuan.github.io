@@ -267,7 +267,15 @@
     }, 10);
   })(document.getElementById('pinkboard'));
   
-  function getDate(){
+  
+</script>
+<div class="namebox">
+  <h1 style="color:#e667af;">p&y </h1>
+  <div style="color:#e667af;text-align: center;" id="ddate" ></div>
+</div>
+
+<script>
+    function getDate(){
     // 目标日期：2025年4月30日
     const targetDate = new Date(2025, 3, 30); // 注意月份是从0开始的，所以4月是3
 
@@ -280,14 +288,11 @@
     // 将毫秒转换为天数
     const daysDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
     const dateText = document.getElementById("ddate");
-    dateText.textContent = Math.abs(daysDiff);
+    dateText.textContent = Math.abs(daysDiff) ;
     }
         
     getDate();
+
 </script>
-<div class="namebox">
-  <h1 style="color:#e667af;">p&y</h1>
-  <h2 style="color:#e667af;" id="ddate"></h2>
-</div>
 </body>
 </html>
